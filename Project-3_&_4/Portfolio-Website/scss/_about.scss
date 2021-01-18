@@ -1,0 +1,25 @@
+.about-me {
+  width: 100%;
+  padding: 30px 20px;
+  background: $main-background-bottom;
+  color: $font-color;
+  z-index: 10;
+  @media (min-width: 768px) {
+    padding: 30px 100px;
+  }
+  .title-section {
+    @include title-section;
+    @media (min-width: 1024px) {
+      margin-bottom: 25px;
+    }
+  }
+  .text-section {
+    line-height: 1.35rem;
+    font-size: 0.95rem;
+    text-align: left;
+    color: darken($font-color, 13%);
+    @media (min-width: 768px) {
+      text-align: justify;
+    }
+  }
+}

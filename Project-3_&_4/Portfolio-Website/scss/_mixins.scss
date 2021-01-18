@@ -1,0 +1,33 @@
+@mixin title($fz, $txt-align, $font-weight) {
+  font-size: $fz;
+  text-align: $txt-align;
+  font-weight: $font-weight;
+}
+@mixin flex-center-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-center-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin title-section {
+  color: $font-color;
+  padding: 20px 0;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+@mixin project-title {
+  padding: 5px;
+  letter-spacing: 1px;
+  color: $font-color;
+  font-weight: 500;
+}
+// @mixin project-img {
+//   width: 80%;
+// }

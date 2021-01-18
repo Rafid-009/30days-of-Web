@@ -1,0 +1,168 @@
+.navigation {
+  position: fixed;
+  width: 100%;
+  max-width: 1200px;
+  z-index: 15;
+
+  .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 50px;
+    @media (min-width: 1024px) {
+      display: none;
+    }
+
+    .mobile-nav {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      background: $main-background-bottom;
+      @media (min-width: 768px) {
+      }
+
+      .mobile-title-link {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 50px;
+        width: 150px;
+        padding: 5px;
+        line-height: 0.8rem;
+        @media (min-width: 768px) {
+          height: 80px;
+          width: 200px;
+        }
+        .mobile-name {
+          @include title(0.8rem, center, 300);
+          @media (min-width: 768px) {
+            font-size: 1rem;
+            line-height: 16px;
+          }
+        }
+        .mobile-title {
+          @include title(0.6rem, center, 300);
+          color: darken($font-color, 20%);
+          @media (min-width: 768px) {
+            font-size: 0.75rem;
+          }
+        }
+      }
+      .burger-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        width: 50px;
+        height: 50px;
+        margin-right: 5px;
+        @media (min-width: 768px) {
+          width: 80px;
+          height: 80px;
+        }
+        .burger-btn-span {
+          position: relative;
+          width: 25px;
+          height: 2px;
+          background-color: darken($font-color, 15%);
+          transition: 0.3s;
+        }
+        .burger-btn-span::before,
+        .burger-btn-span::after {
+          content: "";
+          position: absolute;
+          width: 25px;
+          height: 2px;
+          background-color: darken($font-color, 15%);
+          transform: translateY(-5px);
+          transition: 0.3s;
+        }
+        .burger-btn-span::after {
+          transform: translateY(5px);
+        }
+      }
+      .burger-btn.active .burger-btn-span {
+        background-color: transparent;
+      }
+      .burger-btn.active .burger-btn-span::before {
+        transform: rotate(45deg);
+      }
+      .burger-btn.active .burger-btn-span::after {
+        transform: rotate(-45deg);
+      }
+    }
+    .mobile-list {
+      @include flex-center-column;
+      padding: 15px;
+      line-height: 2rem;
+      background-color: rgba(0, 0, 0, 0.8);
+      transform: translateX(-1500px);
+      transition: ease-in-out 0.3s;
+      @media (min-width: 768px) {
+        padding: 25px;
+      }
+    }
+    .mobile-list.active {
+      transform: translateX(0);
+    }
+  }
+  .desktop-menu {
+    display: none;
+    @media (min-width: 1024px) {
+      display: flex;
+      justify-content: space-around;
+      width: 100vw;
+      transition: 0.5s;
+      .desktop-menu.bcg {
+        display: flex;
+      }
+      z-index: 10;
+    }
+  }
+
+  .desktop-menu.bcg {
+    background: #090a0f;
+  }
+  .desktop-title-link {
+    display: flex;
+    // display: none;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px 20px;
+    margin-left: 45px;
+    transform: translateX(25vw);
+    transition: 0.5s;
+
+    .desktop-name {
+      line-height: 1.25rem;
+      font-size: 0.8rem;
+      font-weight: 400;
+    }
+    .desktop-title {
+      font-size: 0.5rem;
+      color: darken($font-color, 20%);
+    }
+  }
+  .desktop-title-link.bcg {
+    transform: translateX(0);
+  }
+  .desktop-nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-right: 25px;
+    opacity: 0;
+    transition: 0.3s;
+  }
+  .desktop-nav.bcg {
+    opacity: 1;
+  }
+  .desktop-link {
+    padding: 0 15px;
+    font-size: 0.7rem;
+    transition: 0.3s;
+  }
+  .desktop-link:hover {
+    text-shadow: 0px 0px 5px $font-color;
+  }
+}

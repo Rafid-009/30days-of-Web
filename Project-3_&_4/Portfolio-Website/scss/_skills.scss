@@ -1,0 +1,55 @@
+.skills {
+  width: 100%;
+  min-height: 30vh;
+  padding: 30px 20px 0 20px;
+  background: $main-background-top;
+  z-index: 10;
+  @media (min-width: 768px) {
+    padding: 30px 100px;
+  }
+  .title-section {
+    @include title-section;
+    @media (min-width: 1024px) {
+      margin-bottom: 25px;
+    }
+  }
+  .skills-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    width: 100%;
+    color: darken($font-color, 10%);
+    .skill-font {
+      width: 25%;
+      padding: 25px 5px;
+      font-size: 3rem;
+      text-align: center;
+      transition: 0.3s;
+    }
+    .skill-font:hover {
+      cursor: pointer;
+      color: rgb(250, 65, 65);
+    }
+    .skill-font:hover:nth-child(2) {
+      color: rgb(125, 125, 250);
+    }
+    .skill-font:hover:nth-child(3) {
+      color: rgb(204, 102, 153);
+    }
+    .skill-font:hover:nth-child(4) {
+      color: rgb(240, 219, 79);
+    }
+    .skill-font:hover:nth-child(5) {
+      color: rgb(97, 219, 251);
+    }
+    .skill-font:hover:nth-child(6) {
+      color: rgb(96, 44, 80);
+    }
+    .skill-font:hover:nth-child(7) {
+      color: rgb(243, 79, 41);
+    }
+    .skill-font:hover:nth-child(8) {
+      color: rgb(204, 53, 52);
+    }
+  }
+}

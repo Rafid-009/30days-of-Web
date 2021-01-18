@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rafid Ahmed</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <nav class="navigation">
+        <div class="mobile-menu">
+          <div class="mobile-nav">
+            <a href="#header" class="mobile-title-link">
+              <h1 class="mobile-name">Rafid Ahmed</h1>
+              <h2 class="mobile-title">Front-end Developer</h2>
+            </a>
+            <div class="burger-btn">
+              <div class="burger-btn-span"></div>
+            </div>
+          </div>
+          <ul class="mobile-list">
+            <li class="mobile-li">
+              <a href="#aboutme" class="mobile-link">About me</a>
+            </li>
+            <li class="mobile-li">
+              <a href="#skills" class="mobile-link">Skills</a>
+            </li>
+            <li class="mobile-li">
+              <a href="#contact" class="mobile-link">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="desktop-menu">
+          <a href="#header" class="desktop-title-link">
+            <h1 class="desktop-name">Rafid Ahmed</h1>
+            <h2 class="desktop-title">Front-end Developer</h2>
+          </a>
+          <ul class="desktop-nav">
+            <li class="desktop-li">
+              <a href="#aboutme" class="desktop-link">About me</a>
+            </li>
+            <li class="desktop-li">
+              <a href="#skills" class="desktop-link">Skills</a>
+            </li>
+            <li class="desktop-li">
+              <a href="#contact" class="desktop-link">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <header class="header" id="header">
+        <div class="stars-container">
+          <div class="stars-anim"></div>
+          <div class="stars-static"></div>
+          <div class="stars-anim2"></div>
+        </div>
+        <div class="header-links-container">
+          <a href="#aboutme" class="header-link">About me</a>
+          <a href="#skills" class="header-link">Skills</a>
+          <a href="#contact" class="header-link">Contact</a>
+        </div>
+      </header>
+
+      <main class="main">
+        <div class="about-me" id="aboutme">
+          <p class="title-section">About me</p>
+          <p class="text-section">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+            ipsum maxime perferendis nobis quod ea sapiente, recusandae quae
+            quas ab fuga blanditiis assumenda ratione quis explicabo eaque
+            voluptates tempora reiciendis minus beatae laudantium repellendus
+            laborum laboriosam doloremque! Quos quia, vitae deserunt natus cum
+            reprehenderitmo? Neque natus vel cum error sequi repudiandae fugit
+            nihil atque. Nam ut error, at laborum, corporis, excepturi quas
+            nesciunt adipisci obcaecati sequi fugit veritatis impedit culpa
+            placeat. Laborum impedit consequuntur animi porro amet fugit sint
+            doloremque suscipit ratione eos.
+          </p>
+        </div>
+        <div class="skills" id="skills">
+          <p class="title-section">Skills and tools</p>
+          <div class="skills-wrapper">
+            <i class="skill-font fab fa-html5"></i>
+
+            <i class="skill-font fab fa-css3-alt"></i>
+
+            
+            <i class="skill-font fab fa-bootstrap"></i>
+
+            <i class="skill-font fab fa-git-alt"></i>
+
+            
+          </div>
+        </div>
+                 
+        <div class="contact" id="contact">
+          <p class="title-section">Contact</p>
+
+          <form
+            action="mailto:slimshade93@wp.pl"
+            class="contact-form"
+            id="contact-form"
+          >
+            <input
+              type="text"
+              name="name"
+              class="form-control"
+              placeholder="Enter your name..."
+            />
+
+            <input
+              name="email"
+              type="email"
+              class="form-control"
+              placeholder="Enter your e-mail adress..."
+            />
+
+            <textarea
+              name="message"
+              rows="6"
+              class="form-control message"
+              placeholder="Enter your text here..."
+            ></textarea>
+
+            <input
+              type="submit"
+              class="form-control submit"
+              value="Send message"
+              required
+            />
+          </form>
+
+          <div class="contact-links-wrapper">
+            <a href="https://facebook.com/rafid.ahmed.794" class="contact-link"
+              target="_blank"><i class="contact-awesome fab fa-facebook-square"></i>Facebook
+            </a>
+            <a href="https://twitter.com/rafid_ahmed009" class="contact-link"
+              target="_blank"><i class="contact-awesome fab fa-twitter"></i>Twitter
+            </a>
+            <a
+            href="https://www.linkedin.com/in/rafid-ahmed-a510411b2/"
+            class="contact-link"
+             target="_blank" ><i class="contact-awesome fab fa-linkedin"></i>LinkedIn
+            </a>
+            <a href="https://instagram.com/rafid_ahmed009" class="contact-link"
+              target="_blank"><i class="contact-awesome fab fa-instagram"></i>Instagram
+            </a>
+            <a href="https://github.com/Rafid-009" class="contact-link"
+              target="_blank"><i class="contact-awesome fab fa-github"></i>Github
+            </a>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <p class="title-footer">Copyright @2021 | All Rights Reserved</p>
+      </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>

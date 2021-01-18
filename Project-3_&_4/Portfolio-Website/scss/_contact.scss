@@ -1,0 +1,93 @@
+.contact {
+  width: 100%;
+  padding: 0 20px 20px 20px;
+  background: $main-background-top;
+  z-index: 10;
+  @media (min-width: 768px) {
+    padding: 30px 100px;
+  }
+  .title-section {
+    @include title-section;
+    margin-bottom: 30px;
+  }
+  .contact-links-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+  }
+  .contact-link {
+    text-align: center;
+    color: darken($font-color, 10%);
+    font-size: 0.85rem;
+    transition: 0.3s ease-in-out;
+    @media (min-width: 768px) {
+      font-size: 1rem;
+    }
+  }
+  .contact-link:hover {
+    text-shadow: 0 0 5px $font-color;
+  }
+  .contact-awesome {
+    width: 25px;
+    padding: 5px 5px;
+    font-size: 0.85rem;
+    @media (min-width: 768px) {
+      font-size: 1rem;
+    }
+  }
+  .contact-form {
+    width: 100%;
+    max-width: 550px;
+    margin: 10px auto;
+    .form-control {
+      width: 100%;
+
+      margin: 0 auto 10px;
+      background: transparent;
+      border: none;
+      border-bottom: 1px solid darken($font-color, 60%);
+      font-size: 1rem;
+      color: $font-color;
+    }
+    .form-control.submit {
+      border: none;
+      padding: 5px;
+      color: $font-color;
+      box-shadow: -1px -1px 3px rgba(255, 255, 255, 0.1),
+        2px 2px 6px rgba(0, 0, 0, 0.8);
+    }
+    .form-control.submit:hover {
+      cursor: pointer;
+      box-shadow: -1px -1px 3px rgba(255, 255, 255, 0.1),
+        2px 2px 6px rgba(2, 2, 2, 0.8),
+        inset -1px -1px 3px rgba(255, 255, 255, 0.05),
+        inset 2px 2px 6px rgba(2, 2, 2, 0.5);
+    }
+    .form-control.submit:checked {
+      box-shadow: inset -1px -1px 3px rgba(255, 255, 255, 0.1),
+        inset 2px 2px 6px rgba(2, 2, 2, 1);
+      text-shadow: 0 0 5px #00fff1, 0 0 20px #00fff1;
+    }
+    .form-control.message {
+      color: $font-color;
+      margin-top: 10px;
+      background-color: rgba(255, 255, 255, 0.05);
+    }
+    ::placeholder {
+      color: darken($font-color, 25%);
+    }
+  }
+}
+.footer {
+  width: 100%;
+  text-align: center;
+  font-size: 0.75rem;
+  background: $main-background-bottom;
+  .title-footer {
+    padding: 15px 0 5px;
+    color: darken($font-color, 25%);
+    @media (min-width: 768px) {
+      font-size: 0.9rem;
+    }
+  }
+}
